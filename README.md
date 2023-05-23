@@ -42,7 +42,7 @@ data|/opt/spark-data| Make your data available on all workers & master
 
 # Run application
 
-## NY Bus Stops Data [Pyspark]
+## Download data sets and analyze the data
 
 This application just loads archived data from [MTA Bus Time](http://web.mta.info/developers/MTA-Bus-Time-historical-data.html). Renaming of the downloaded file in main.py and mta.conf is needed. 
 Filters and aggregations are used to anaylize the data with Spark. The result is persisted into a postgreSQL table.
