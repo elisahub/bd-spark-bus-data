@@ -25,8 +25,8 @@ Following containers will be created:
 container|Exposed ports
 ---|---
 spark-master|9090 7077
-spark-worker-1|9091
-spark-worker-2|9092
+spark-worker-A|9091
+spark-worker-B|9092
 demo-database|5432
 
 # Binded Volumes
