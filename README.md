@@ -2,7 +2,7 @@
 
 # General
 
-A basic spark standalone cluster which analyizes bus data and stores the results in a postgreSQL Database. HDFS is not used in this example instead the files are just stored on the local filesystem.
+A basic spark standalone cluster which analyizes bus stop data from the MTA in NYC and stores the results in a postgreSQL Database. HDFS is not used in this example instead the files are just stored on the local filesystem on every node in the cluster.
 
 # Installation instructions
 
@@ -46,6 +46,9 @@ data|/opt/spark-data| Make your data available on all workers & master
 
 This application just loads archived data from [MTA Bus Time](http://web.mta.info/developers/MTA-Bus-Time-historical-data.html). Renaming of the downloaded file in main.py and mta.conf is needed. 
 Filters and aggregations are used to anaylize the data with Spark. The result is persisted into a postgreSQL table.
+
+The following image defines the columns in the data file:
+<img src="images/Column_def.jpg" alt="Date Field Definitions" width="600" height="500">
 
 To submit the app connect to one of the workers or master:
 ```sh
