@@ -25,8 +25,8 @@ Following containers will be created:
 container|Exposed ports
 ---|---
 spark-master|9090 7077
-spark-worker-1|9091
-spark-worker-2|9092
+spark-worker-A|9091
+spark-worker-B|9092
 demo-database|5432
 
 # Binded Volumes
@@ -48,6 +48,7 @@ This application just loads archived data from [MTA Bus Time](http://web.mta.inf
 Filters and aggregations are used to anaylize the data with Spark. The result is persisted into a postgreSQL table.
 
 The following image defines the columns in the data file:
+
 <img src="images/Column_def.jpg" alt="Date Field Definitions" width="600" height="500">
 
 To submit the app connect to one of the workers or master:
