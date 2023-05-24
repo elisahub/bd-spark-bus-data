@@ -48,6 +48,7 @@ This application just loads archived data from [MTA Bus Time](http://web.mta.inf
 Filters and aggregations are used to anaylize the data with Spark. The result is persisted into a postgreSQL table.
 
 The following image defines the columns in the data file:
+
 <img src="images/Column_def.jpg" alt="Date Field Definitions" width="600" height="500">
 
 To submit the app connect to one of the workers or master:
